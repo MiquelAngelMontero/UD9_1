@@ -30,8 +30,8 @@ public class Electrodomestico {
 	//Constructor con precio y peso
 	public Electrodomestico(double precioBase, double peso) {
 		this.precioBase = precioBase;
-		this.color = "blanco";
-		this.consumoE = 6;
+		this.color = COLOR;
+		this.consumoE = CONSUMOE;
 		this.peso = peso;
 	}
 
@@ -111,9 +111,7 @@ public class Electrodomestico {
 				break;
 			case 'F':
 				precioF = precioF + 30;
-				break;
-			default:
-				System.out.println("El consumo introducido no es correcto");		
+				break;		
 		}
 		
 		return precioF;
